@@ -1,0 +1,162 @@
+.page {
+  padding-bottom: clamp(40px, 4.5vw, 60px);
+}
+
+.catalog {
+  max-width: 1072px;
+  margin: 0 auto;
+  padding: clamp(28px, 3.4vw, 44px) 16px 0;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.toolbarRight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.segmented {
+  display: flex;
+  padding: 3px;
+  border: 1.2px solid #222;
+  border-radius: 999px;
+  background: #0d0d0d;
+}
+
+.segment {
+  height: 30px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #cfcfcf;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 200ms, color 200ms;
+}
+
+.segmentActive {
+  background: var(--green);
+  color: #000;
+}
+
+.count {
+  margin: 20px 0 0;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+.grid {
+  margin-top: 14px;
+}
+
+.empty {
+  margin-top: 14px;
+  padding: 56px 20px;
+  border: 1.5px solid #222;
+  border-radius: 12px;
+  background: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.emptyTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.emptyText {
+  margin: 0;
+  font-size: 13px;
+  color: #8a8a8a;
+}
+
+.resetBtn {
+  height: 32px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--green);
+  color: #000;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.note {
+  margin: 24px 0 0;
+  font-size: 10.5px;
+  color: #6a6a6a;
+}
+
+.promo {
+  max-width: 1072px;
+  margin: clamp(40px, 4.5vw, 60px) auto 0;
+  padding: 0 16px;
+}
+
+.promoLink {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 120px;
+  padding: 24px clamp(20px, 3vw, 36px);
+  border-radius: 12px;
+  background: var(--green-gradient);
+  color: #0a0a0a;
+  transition: box-shadow 250ms;
+}
+
+.promoLink:hover {
+  color: #0a0a0a;
+  box-shadow: 0 0 22px rgba(117, 242, 92, 0.3);
+}
+
+.promoTitle {
+  font-weight: 700;
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  max-width: 18em;
+}
+
+.promoBtn {
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  background: #050505;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.arrow {
+  color: var(--green);
+}

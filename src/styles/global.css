@@ -1,0 +1,31 @@
+:root {
+  --green: #75f25c;
+  --green-gradient: linear-gradient(90deg, #4fd13c 0%, #6cf052 45%, #44f23a 100%);
+  --bg: #050505;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #fff;
+  font-family: 'Poppins', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--green);
+}
+
+::placeholder {
+  color: #5a5a5a;
+}

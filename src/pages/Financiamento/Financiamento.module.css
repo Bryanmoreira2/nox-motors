@@ -1,0 +1,235 @@
+.page {
+  padding-bottom: clamp(48px, 5vw, 72px);
+}
+
+.section {
+  max-width: 1072px;
+  margin: 0 auto;
+  padding: clamp(32px, 4vw, 52px) 16px 0;
+}
+
+.sectionTitle {
+  margin: 0 0 20px;
+  font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.simGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+  gap: clamp(14px, 1.8vw, 22px);
+}
+
+/* ---------- Formulário ---------- */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: clamp(20px, 2.6vw, 32px);
+  border: 1.5px solid #222;
+  border-radius: 12px;
+  background: #0d0d0d;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+.rangeHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.rangeValue {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.rangePct {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+.range {
+  width: 100%;
+  accent-color: var(--green);
+  cursor: pointer;
+}
+
+.rangeScale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10.5px;
+  color: #6a6a6a;
+}
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legend {
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+.terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.term {
+  height: 38px;
+  min-width: 58px;
+  padding: 0 14px;
+}
+
+/* ---------- Resultado ---------- */
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: clamp(20px, 2.6vw, 32px);
+  border-radius: 12px;
+  background: var(--green-gradient);
+  color: #050505;
+}
+
+.resultHead {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resultLabel {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.resultValue {
+  font-size: clamp(40px, 4.6vw, 60px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.resultUnit {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.resultMeta {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.summary {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px 16px;
+  font-size: 13px;
+  padding-top: 18px;
+  border-top: 1.5px solid rgba(5, 5, 5, 0.2);
+}
+
+.summary dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+}
+
+.resultCta {
+  margin-top: auto;
+  align-self: flex-start;
+  height: 44px;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  background: #050505;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  transition: box-shadow 200ms;
+}
+
+.resultCta:hover {
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(5, 5, 5, 0.2);
+}
+
+.arrow {
+  color: var(--green);
+}
+
+.note {
+  margin: 14px 0 0;
+  font-size: 10.5px;
+  color: #6a6a6a;
+}
+
+/* ---------- Como funciona ---------- */
+.how {
+  max-width: 1072px;
+  margin: clamp(44px, 5vw, 68px) auto 0;
+  padding: 0 16px;
+}
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: clamp(14px, 1.8vw, 22px);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  border: 1.5px solid #222;
+  border-radius: 12px;
+  background: #0d0d0d;
+}
+
+.stepNum {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--green);
+  letter-spacing: -0.03em;
+}
+
+.stepTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stepText {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #9a9a9a;
+}

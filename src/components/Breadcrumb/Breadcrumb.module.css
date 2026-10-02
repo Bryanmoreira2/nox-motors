@@ -1,0 +1,19 @@
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+.link {
+  color: #9a9a9a;
+}
+
+.link:hover {
+  color: var(--green);
+}
+
+.current {
+  color: var(--green);
+}

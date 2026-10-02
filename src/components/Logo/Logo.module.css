@@ -1,0 +1,50 @@
+.logo,
+.logo:hover {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+}
+
+.md {
+  font-size: 30px;
+  letter-spacing: -1.5px;
+}
+
+.lg {
+  font-size: 34px;
+  letter-spacing: -1.6px;
+}
+
+.bars {
+  display: flex;
+  gap: 3px;
+  transform: skewX(-20deg);
+}
+
+.bar {
+  width: 5px;
+  height: 22px;
+  background: var(--green);
+  border-radius: 1px;
+}
+
+.lg .bar {
+  width: 6px;
+  height: 25px;
+}
+
+.barFaded {
+  opacity: 0.55;
+}
+
+.tag {
+  align-self: flex-end;
+  margin: 0 0 3px 3px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--green);
+}

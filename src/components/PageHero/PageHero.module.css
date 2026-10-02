@@ -1,0 +1,92 @@
+.hero {
+  position: relative;
+  height: clamp(280px, 25vw, 360px);
+  background: #070707;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) brightness(0.45) contrast(1.1);
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #050505 0%, rgba(5, 5, 5, 0.86) 42%, rgba(5, 5, 5, 0.35) 100%);
+}
+
+.lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.chevrons {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24%;
+  max-width: 340px;
+  pointer-events: none;
+}
+
+.bike {
+  position: absolute;
+  right: 4%;
+  bottom: 0;
+  width: min(34%, 440px);
+  height: 90%;
+  object-fit: contain;
+  object-position: bottom center;
+}
+
+.content {
+  position: relative;
+  max-width: 1072px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 16px clamp(28px, 3.4vw, 44px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 58px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  max-width: 12em;
+  text-wrap: balance;
+}
+
+.highlight {
+  color: var(--green);
+}
+
+.sub {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #b9b9b9;
+  max-width: 44ch;
+}
+
+@media (max-width: 759px) {
+  .hero {
+    height: 300px;
+  }
+
+  .bike {
+    display: none;
+  }
+}
